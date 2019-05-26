@@ -243,13 +243,13 @@ try:
     
     # print data
 
-    os.system("~/mqtt.sh humidity " + humidity)
-    os.system("~/mqtt.sh radon_st_avg " + radon_st_avg)
-    os.system("~/mqtt.sh radon_lt_avg " + radon_lt_avg)
-    os.system("~/mqtt.sh temperature " + temperature)
-    os.system("~/mqtt.sh pressure " + pressure)
-    os.system("~/mqtt.sh CO2_lvl " + CO2_lvl)
-    os.system("~/mqtt.sh VOC_lvl " + VOC_lvl)
+    os.system("/home/pi/mqtt.sh humidity " + humidity)
+    os.system("/home/pi/mqtt.sh radon_st_avg " + radon_st_avg)
+    os.system("/home/pi/mqtt.sh radon_lt_avg " + radon_lt_avg)
+    os.system("/home/pi/mqtt.sh temperature " + temperature)
+    os.system("/home/pi/mqtt.sh pressure " + pressure)
+    os.system("/home/pi/mqtt.sh CO2_lvl " + CO2_lvl)
+    os.system("/home/pi/mqtt.sh VOC_lvl " + VOC_lvl)
 
     waveplus.disconnect()
     
